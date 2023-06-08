@@ -1,0 +1,19 @@
+version: "0.1"
+services: 
+  db-mysql:
+    image: mysql:5.7
+    networks: 
+      - rede-bridge
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./Volumes/MySQL:/var/lib/mysql
+    environment:
+      MYSQL_USER: wordpress@%
+      MYSQL_PASSWORD: Fapp79EXXR4hsU
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: b3ejyeBB8ycmKP
+
+networks:
+  rede-bridge:
+    driver: bridge

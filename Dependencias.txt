@@ -1,0 +1,3 @@
+- PHP version 7.4 or greater.
+- MySQL version 5.7 or greater OR MariaDB version 10.3 or greater.
+- Apache HTTPD 2.4
