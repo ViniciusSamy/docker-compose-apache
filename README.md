@@ -14,15 +14,14 @@ Docker compose utilizado para subir um ambiente wordpress
 
 2. Run Docker Compose in terminal
 
-``docker compose up``
+``docker compose up -d``
 
 1. Find your machine ip address in terminal
 
-``docker inspect apache-site``
+``docker inspect apache-site | grep IPAddress``
 
-1. Connect to it via browser 
-
-``<container_ip>:8080``
+1. Access site on browser
+``URL: <container_ip>``
 
 
 
