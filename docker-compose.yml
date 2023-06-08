@@ -1,0 +1,12 @@
+version: "0.1"
+services: 
+  db-mysql:
+    image: vinicius/apache
+    container_name: apache-site
+    networks: 
+      - rede-principal
+    ports:
+      - "8080:80"
+networks:
+  rede-principal:
+    driver: bridge
