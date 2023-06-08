@@ -21,6 +21,7 @@ Docker compose utilizado para subir um ambiente wordpress
 ``docker inspect apache-site | grep IPAddress``
 
 1. Access site on browser
+
 ``URL: <container_ip>``
 
 
